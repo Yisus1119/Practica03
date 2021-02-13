@@ -6,9 +6,11 @@ namespace Practica03
     {
         static void Main(string[] args)
         {
-            //ejercicio 1
+            /*ejercicio 1 •	Crear un programa que pida números positivos al usuario, y vaya calculando
+            la suma de todos ellos(terminará cuando se teclea un número negativo o cero). */
 
-            Console.WriteLine("-----EJERCICIO 1-----");
+
+                        Console.WriteLine("-----EJERCICIO 1-----");
             int n1;
             int acumulador = 0;
 
@@ -18,7 +20,7 @@ namespace Practica03
                 n1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("El número ingresado fue: " + n1);
                 acumulador = acumulador + n1;
-            } while (n1 != 0);
+            } while (n1 != 0 && n1 >= 1);
             Console.WriteLine("El resultado de los numeros es: " + acumulador);
 
             //ejercicio 2
