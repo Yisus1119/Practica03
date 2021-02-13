@@ -6,11 +6,12 @@ namespace Practica03
     {
         static void Main(string[] args)
         {
+            #region ejercicio 1 
             /*ejercicio 1 •	Crear un programa que pida números positivos al usuario, y vaya calculando
             la suma de todos ellos(terminará cuando se teclea un número negativo o cero). */
 
 
-                        Console.WriteLine("-----EJERCICIO 1-----");
+            Console.WriteLine("-----EJERCICIO 1-----");
             int n1;
             int acumulador = 0;
 
@@ -20,10 +21,12 @@ namespace Practica03
                 n1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("El número ingresado fue: " + n1);
                 acumulador = acumulador + n1;
-            } while (n1 != 0 && n1 >= 1);
+            } while (n1 != 0 && n1 >=1);
             Console.WriteLine("El resultado de los numeros es: " + acumulador);
+            #endregion
 
-            //ejercicio 2
+            #region ejercicio 2
+            //ejercicio 2 •	Crea un programa que escriba en pantalla los números del 1 al 10, usando "do..while".
             Console.WriteLine("-----EJERCICIO 2-----");
 
             int contador = 1;
@@ -32,7 +35,9 @@ namespace Practica03
                 Console.WriteLine(contador);
                 contador += 1;
             } while (contador <= 10);
+            #endregion
 
+            #region ejercicio 3
             //ejercicio 3, crear un programa que muestre los 10 primeros numeros pares a partir del producto de (10x10)
             Console.WriteLine("-----EJERCICIO 3-----");
 
@@ -42,8 +47,10 @@ namespace Practica03
                 int mp = pr * i;
                 Console.WriteLine(pr + " X " + i + " = " + mp);
             }
+            #endregion
 
-            //ejercicio 4
+            #region ejercicio 4
+            //ejercicio 4 •	Crear un programa que muestre las letras de la Z (mayúscula) a la A (mayúscula, descendiendo).
             Console.WriteLine("-----EJERCICIO 4-----");
             char letra;
 
@@ -51,6 +58,8 @@ namespace Practica03
             {
                 Console.WriteLine(letra);
             }
+            #endregion
         }
     }
+
 }
